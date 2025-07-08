@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WarningCraft | Minecraft Сервер</title>
+  <title>WarningCraft | Главная</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,41 +14,59 @@
     }
 
     body {
-      background: #1e1e2f;
-      color: #f5f5f5;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
       line-height: 1.6;
     }
 
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #00ffa6;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 255, 166, 0.2);
+    }
+
     header {
-      background-color: #292946;
-      padding: 20px 0;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      padding: 60px 20px 30px;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
       color: #00ffa6;
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 1.1rem;
-      color: #ccc;
+      font-size: 1.2rem;
+      color: #e0e0e0;
     }
 
     .container {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
     }
 
     .info-box {
-      background-color: #2e2e4d;
-      border-left: 5px solid #00ffa6;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      margin-bottom: 25px;
     }
 
     .info-box h2 {
@@ -58,34 +76,43 @@
 
     .ip {
       font-size: 1.3rem;
-      background: #1a1a2e;
+      background: #111;
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 6px;
       display: inline-block;
       margin-top: 10px;
       font-family: monospace;
+      color: #00ffa6;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #1a1a2e;
-      color: #777;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #aaa;
       margin-top: 40px;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
 
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О сервере</a>
+    <a href="rules.html">Правила</a>
+    <a href="team.html">Команда</a>
+    <a href="connect.html">Как подключиться</a>
+  </nav>
+
   <header>
     <h1>WarningCraft</h1>
-    <p>Добро пожаловать на сервер Minecraft версии 1.20.1</p>
+    <p>Добро пожаловать на официальный сайт Minecraft-сервера!</p>
   </header>
 
   <div class="container">
@@ -95,18 +122,8 @@
     </div>
 
     <div class="info-box">
-      <h2>О сервере</h2>
-      <p>WarningCraft — это уникальный сервер Minecraft, созданный в 2025 году. У нас дружелюбное сообщество, стабильная работа и интересные режимы игры. Заходи и играй с друзьями!</p>
-    </div>
-
-    <div class="info-box">
-      <h2>Как подключиться?</h2>
-      <ol>
-        <li>Открой Minecraft версии <strong>1.20.1</strong></li>
-        <li>Перейди в «Мультиплеер» → «Добавить сервер»</li>
-        <li>Вставь IP: <code>tcp.cloudpub.ru:36327</code></li>
-        <li>Нажми «Готово» и заходи играть!</li>
-      </ol>
+      <h2>О проекте</h2>
+      <p>WarningCraft — это Minecraft сервер версии 1.20.1, созданный в 2025 году. Здесь вас ждёт уютное комьюнити, интересный выживание и постоянные обновления. Присоединяйтесь!</p>
     </div>
   </div>
 

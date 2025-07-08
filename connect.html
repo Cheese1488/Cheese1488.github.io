@@ -24,13 +24,27 @@
 
   <div class="container">
     <div class="info-box">
-      <ol>
-        <li>Открой Minecraft версии <strong>1.20.1</strong></li>
-        <li>Нажми «Мультиплеер» → «Добавить сервер»</li>
-        <li>Введи IP: <span class="ip">tcp.cloudpub.ru:36327</span></li>
-        <li>Нажми «Готово» и заходи играть!</li>
-      </ol>
-    </div>
+  <ol>
+    <li>Открой Minecraft версии <strong>1.20.1</strong></li>
+    <li>Нажми «Мультиплеер» → «Добавить сервер»</li>
+    <li>
+      Введи IP: 
+      <span class="ip" id="server-ip">tcp.cloudpub.ru:36327</span>
+      <button class="copy-btn" onclick="copyIP()">Скопировать</button>
+    </li>
+    <li>Нажми «Готово» и заходи играть!</li>
+  </ol>
+</div>
+
+<script>
+  function copyIP() {
+    const ip = document.getElementById("server-ip").textContent;
+    navigator.clipboard.writeText(ip).then(() => {
+      alert("IP скопирован: " + ip);
+    });
+  }
+</script>
+
   </div>
 
   <footer>
